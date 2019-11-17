@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CATMIMI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/formulario_mascota.css">
+</head>
+    
+<body>
+    <div class="fbody">
+        <div class="jumbotron">
+            <h1> Datos personales</h1>  
+        </div>
+        <div class="fcontacto">
+                <div class="logo">
+                    <img src="img/logo.png" alt="contactame">
+                </div>
+                <form method="Post" name="fcontacto" id="fcontacto" action="php/for_mascotas.php">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Nombre: </label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Run: </label>
+                            <input type="number" name="run" id="run" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Telefono: </label>
+                            <input type="number" name="telefono" id="telefono" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label>email: </label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <fieldset class="col-md-6">
+                                <legend>Dirección</legend>
+                                <textarea name="direccion" ></textarea>
+                        </fieldset>
+                        <fieldset class="col-md-6">
+                                <label >Region</label> <br>
+                                <select name="region">
+                                    <option value="13">Metropolitana</option>
+                                    <option value="4">Coquimbo</option>
+                                    <option value="5">Valparaiso</option>
+                                    <option value="6">O'Higgins</option>
+                                    <option value="6">Otra</option>
+                                </select>
+                            </fieldset>
+                    </div>
+                    <label>¿Por que quiere un gatito? </label>
+                    <textarea name="mensaje" id="mensaje" cols="5" rows="5" class="form-control"></textarea><br>
+
+                    <div class="jumbotron">
+            <h2> Adopta un gatito</h2>  
+                    </div>
+                <div class="row"></div>
+                    <div class="col-md-6">
+                        <label>Tipo de raza: </label>
+                        <input type="text" name="tipo_raza" id="tipo_raza" class="form-control">
+                    </div>
+                    <fieldset class="col-md-6">
+                            <label >Edad</label> <br>
+                            <select name="edad">
+                                <option value="13">1 mes</option>
+                                <option value="4">2 meses</option>
+                                <option value="5">3 meses</option>
+                                <option value="6">1 año</option>
+                                <option value="7">Otros</option>
+                            </select>
+                        </fieldset>
+                    <div class="col-md-6">
+                        <label>Tipo de pelaje: </label>
+                        <input type="text" name="tipo_pelaje" id="tipo_pelaje" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Color de ojos: </label>
+                        <input type="text" name="color_ojos" id="color_ojos" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                    <label>Tipo de comida: </label>
+                    <input type="text" name="Tipo_comida" id="Tipo_comida" class="form-control">
+                    </div>
+                    <label class="col-md-6">Genero</label>
+                    <input type="radio" name="hombre" 
+                    value="sexo" checked="checked"> Hembra
+                    <input type="radio" name="hombre" 
+                    value="hombre"> Macho 
+                    <label>¿Te gustan los gatos jugetones? </label>
+				<input type="checkbox" name="gato">Si<br>
+                    <label>Descripcion del gatito </label>
+                    <textarea name="descripcion" id="descripcion" cols="5" rows="5" class="form-control"></textarea><br>
+                 <input type="submit" class="btn btn-info" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

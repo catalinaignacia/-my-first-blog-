@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +6,17 @@
   <title>CATMIMI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/formulario_mascota.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/formulario_mascota.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
     <div id="cabecera">
         <header>
             <div id="logo" class="centrado">
                 <a href="home.html">
-                <img src="img/logo.png" alt="logo" /> 
+                <img src="{% static 'img/logo.png' %}" alt="logo" /> 
                 </a>
                 </div>
                         
@@ -33,18 +34,18 @@
 <div id="banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(img/1.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/2.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/3.jpeg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/4.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/5.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url('/static/img/1.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/static/img/2.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/static/img/3.jpeg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/static/img/4.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/static/img/5.jpg')"></div>
                     <div class="swiper-pagination"></div>
              </div>
          </div>
 </div>
 
-  <script src="js/swiper.min.js"></script>
-  <script src="js/home.js"></script>
+  <script src="{% static 'js/swiper.min.js' %}"></script>
+  <script src="{% static 'js/home.js' %}"></script>
 
 <div id="nosotros">
         <div class="centrado">
@@ -64,19 +65,19 @@
         </div>
         <div class="col-md-1">
             <h4>Gatos Bebés</h4>
-                <img src="img/gatito.jpg" alt="foto" width="90" height="100" />
+                <img src="{% static 'img/gatito.jpg' %}" alt="foto" width="90" height="100" />
         </div>
         <div class="col-md-1">
             <h4>Gatos Adultos</h4>
-                <img src="img/gatos.jpg" alt="foto" width="90" height="100" />
+                <img src="{% static 'img/gatos.jpg' %}" alt="foto" width="90" height="100" />
         </div>
         <div class="col-md-1">
             <h4>Razas Especiales</h4>
-                <img src="img/razas.jpg" alt="foto" width="90" height="100" />
+                <img src="{% static 'img/razas.jpg' %}" alt="foto" width="90" height="100" />
         </div>
         <div class="col-md-1">
                 <h4>Razas Especiales</h4>
-                    <img src="img/razas.jpg" alt="foto" width="90" height="100" />
+                    <img src="{% static 'img/razas.jpg' %}" alt="foto" width="90" height="100" />
             </div>
         <div class="col-md-4">
                     

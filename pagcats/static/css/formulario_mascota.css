@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+label, input[type="submit"]{
+    margin-top: 6px;
+}
+
+
+.fbody{
+    background-color: #FBE8A6;
+    border: 1px solid rgb(243, 213, 104);
+    border-radius: 8px;
+    margin: 30px auto;
+    width: 500px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+
+}
+
+.jumbotron{
+    background-color: #FBE8A6;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 0px;
+    padding: 16px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+}
+
+.jumbotron h1{
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0px 1px rgb(64, 69, 73);
+}
+
+.jumbotron h2{
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0px 1px rgb(64, 69, 73);
+}
+
+.fcontacto{
+    padding: 14px;
+}
+
+.logo{
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+
+body{
+    background-color: #F4976c;
+    color: rgb(235, 70, 29);
+    font-size: 20px;
+}
+
