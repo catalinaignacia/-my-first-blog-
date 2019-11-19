@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="static/css/login.css">
+{% block content %}
+    <h1>Crea una cuenta</h1>
+    <form method="POST">
+            {% csrf_token %}
+        {{form.as_p}}
+        <button>Registarse</button>
+
+    </form>
+{% endblock %}

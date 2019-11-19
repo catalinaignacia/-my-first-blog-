@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="static/css/registro.css">
+{% block content %}
+    <h1>Inicia Sesion</h1>
+    <div class="fbody">
+
+        <form method="POST">
+                {% csrf_token %}
+            {{form.as_p}}
+            <button>Entrar</button>
+
+        </form>
+   </div>
+{% endblock %}
