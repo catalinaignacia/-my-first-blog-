@@ -22,10 +22,12 @@
                         
             <div id="menu" class="centrado">
                 <nav>
-                <a href="home.html">Inicio</a>
+                <a href="{% url 'post_list' %}">Inicio</a>
                 <a href="https://www.instagram.com/gatitosygatos/?hl=es-la">Nuesta Fundacion</a>
-                <a href="formulario_mascota.html">Adopta Un Gatito</a>
-                <a href="contacto.html">Contáctanos</a>
+                <a href="{% url 'post_web2' %}">Adopta Un Gatito</a>
+                <a href="{% url 'post_web3' %}">Contáctanos</a>
+                <a href="/Registro.html/">Registrate</a>
+                <a href="">Inicia Sesion</a>
                 </nav>
             </div>
         </header>

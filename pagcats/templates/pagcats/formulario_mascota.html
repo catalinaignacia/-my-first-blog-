@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+
+{% load staticfiles %}
+
+{% block principal %}
+
 <head>
   <meta charset="utf-8">
   <title>CATMIMI</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/formulario_mascota.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/formulario_mascota.css' %}">
 </head>
     
 <body>
@@ -14,7 +17,7 @@
         </div>
         <div class="fcontacto">
                 <div class="logo">
-                    <img src="img/logo.png" alt="contactame">
+                    <img src="{% static 'img/logo.png' %}" alt="contactame">
                 </div>
                 <form method="Post" name="fcontacto" id="fcontacto" action="php/for_mascotas.php">
                     <div class="row">
@@ -96,4 +99,4 @@
         </div>
     </div>
 </body>
-</html>
+{% endblock %}
